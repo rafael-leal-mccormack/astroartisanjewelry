@@ -1,26 +1,19 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import FeaturedProducts from './components/FeaturedProducts';
-import Newsletter from './components/Newsletter';
+import Store from './pages/Store';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
       <div className="min-h-screen bg-primary">
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <FeaturedProducts />
-              <Newsletter />
-            </>
-          } />
-          <Route path="/store" element={<div>Store Page (Coming Soon)</div>} />
+          <Route path="/" element={<Hero />} />
+          <Route path="/store" element={<Store />} />
         </Routes>
       </div>
-    </Router>
+    </BrowserRouter>
   );
 }
 
