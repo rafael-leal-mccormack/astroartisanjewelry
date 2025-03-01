@@ -1,32 +1,34 @@
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
 interface ShootingStarProps {
   onComplete: () => void;
 }
 
 const ShootingStar = ({ onComplete }: ShootingStarProps) => {
+  // Adjust distance based on screen width
+  const isMobile = window.innerWidth < 768;
   // Start from anywhere along the top-left 40% of the screen
   const startX = Math.random() * (window.innerWidth * 0.8);
   const startY = Math.random() * (window.innerHeight * 0.8);
-  const distance = window.innerWidth * 1.3; // Ensure it goes off screen
-  const angle = 35; // Consistent angle between 35-45 degrees
+  const distance = window.innerWidth * (isMobile ? 4 : 1.3);
+  const angle = 35;
 
   return (
     <motion.div
-      initial={{ 
+      initial={{
         x: startX,
         y: startY,
         opacity: 0,
       }}
       animate={{
         x: startX + distance,
-        y: startY + (distance * Math.tan(angle * Math.PI / 180)),
+        y: startY + distance * Math.tan((angle * Math.PI) / 180),
         opacity: [0, 1, 1, 0],
       }}
       transition={{
         duration: 2,
         ease: "linear",
-        opacity: { times: [0, 0.1, 0.8, 1] }
+        opacity: { times: [0, 0.1, 0.8, 1] },
       }}
       onAnimationComplete={onComplete}
       className="absolute z-10"
@@ -45,16 +47,10 @@ const ShootingStar = ({ onComplete }: ShootingStarProps) => {
           stroke="url(#shooting-star-gradient)"
           strokeWidth="4"
         />
-        <circle 
-          cx="153"
-          cy="5.5" 
-          r="2.5" 
-          fill="white" 
-          filter="url(#glow)" 
-        />
-        
+        <circle cx="153" cy="5.5" r="2.5" fill="white" filter="url(#glow)" />
+
         <defs>
-          <linearGradient 
+          <linearGradient
             id="shooting-star-gradient"
             gradientUnits="userSpaceOnUse"
           >
@@ -75,4 +71,4 @@ const ShootingStar = ({ onComplete }: ShootingStarProps) => {
   );
 };
 
-export default ShootingStar; 
+export default ShootingStar;
