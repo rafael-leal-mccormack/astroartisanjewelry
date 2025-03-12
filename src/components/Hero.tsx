@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { FaInstagram, FaEtsy } from 'react-icons/fa';
 import { PiThreadsLogoFill } from 'react-icons/pi';
 import { IconType } from 'react-icons';
+import { FaStar } from 'react-icons/fa';
+import { IoMoonSharp } from 'react-icons/io5';
 
 const SocialIcon = ({ Icon, href }: { Icon: IconType; href: string }) => (
   <motion.a
@@ -17,6 +19,13 @@ const SocialIcon = ({ Icon, href }: { Icon: IconType; href: string }) => (
   >
     {Icon({ size: 24 })}
   </motion.a>
+);
+
+const BulletPoint = ({ icon, children }: { icon: IconType, children: React.ReactNode }) => (
+  <li className="flex items-center gap-3 text-lg md:text-xl font-serif text-gray-200">
+    {icon({ size: 16, className: "text-white/80" })}
+    {children}
+  </li>
 );
 
 const Hero = () => {
@@ -54,7 +63,7 @@ const Hero = () => {
           transition={{ delay: 0.5 }}
           className="text-sm font-quicksand tracking-[0.3em] uppercase mb-4"
         >
-          Celestial Collections
+          Inspired by the stars
         </motion.span>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
@@ -68,10 +77,23 @@ const Hero = () => {
             className="h-64 lg:h-[25rem] w-auto mx-auto scale-[2]"
           />
         </motion.div>
-        <p className="text-lg md:text-xl font-serif max-w-2xl mx-auto mb-8 leading-relaxed text-gray-200">
+        {/* <p className="text-lg md:text-xl font-serif max-w-2xl mx-auto mb-8 leading-relaxed text-gray-200">
           Handcrafted jewelry inspired by the cosmos, 
           <br />designed for those who dream among the stars
-        </p>
+        </p> */}
+        <motion.ul
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3 }}
+          className="flex flex-col gap-3 mb-8"
+        >
+          <BulletPoint icon={FaStar}>
+            Small batch polymer clay & charm earrings
+          </BulletPoint>
+          <BulletPoint icon={IoMoonSharp}>
+            Handmade & lightweight
+          </BulletPoint>
+        </motion.ul>
         <Link to="/store">
           <motion.button
             whileHover={{ scale: 1.05 }}

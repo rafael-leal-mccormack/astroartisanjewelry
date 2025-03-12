@@ -23,100 +23,228 @@ interface EtsyResponse {
 const mockListings: EtsyListing[] = [
   {
     listing_id: 1,
-    title: "Celestial Moon Phase Necklace",
-    description: "Handcrafted sterling silver moon phase necklace with crystal accents",
+    title: "Head in the Clouds",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Head in the clouds adds a touch of elegance, making them perfect for everyday wear or special occasions.",
     price: {
-      amount: 4500,
+      amount: 2800,
       divisor: 100,
       currency_code: "USD"
     },
     images: [{
-      url_570xN: "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=570"
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/c6b25e/6627592103/il_1588xN.6627592103_r9k4.jpg"
     }],
-    url: "#",
-    quantity: 5,
+    url: "https://www.etsy.com/listing/979361103/handmade-polymer-clay-earrings-head-in?ref=shop_home_feat_1&logging_key=7c386ba0e9a5621bcb8a112a9323ab09d792d165%3A979361103",
+    quantity: 20,
     state: "active"
   },
   {
     listing_id: 2,
-    title: "Star Constellation Ring",
-    description: "Gold-plated adjustable ring featuring your choice of constellation",
+    title: "Bloom",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Bloom adds a touch of elegance, making them perfect for everyday wear or special occasions.",
     price: {
-      amount: 3200,
+      amount: 2000,
       divisor: 100,
       currency_code: "USD"
     },
     images: [{
-      url_570xN: "https://images.unsplash.com/photo-1573408301185-9146fe634578?w=570"
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/72b219/6701482128/il_1588xN.6701482128_fasb.jpg"
     }],
-    url: "#",
-    quantity: 8,
+    url: "https://www.etsy.com/listing/1870921880/handmade-polymer-clay-earrings-bloom?ref=shop_home_active_1&logging_key=2bad5ffd0f4746402cbce7006a2f596455f4169e%3A1870921880",
+    quantity: 7,
     state: "active"
   },
   {
     listing_id: 3,
-    title: "Galaxy Opal Earrings",
-    description: "Stunning opal drop earrings with sterling silver backing",
+    title: "Stardew",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Stardew adds a touch of elegance, making them perfect for everyday wear or special occasions.",
     price: {
-      amount: 6500,
+      amount: 2500,
       divisor: 100,
       currency_code: "USD"
     },
     images: [{
-      url_570xN: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=570"
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/bda5b9/6749511815/il_1588xN.6749511815_cd99.jpg"
     }],
-    url: "#",
-    quantity: 3,
+    url: "https://www.etsy.com/listing/1870918690/handmade-polymer-clay-earrings-stardew?ref=shop_home_active_2&logging_key=984a55be71cc58b0e61ac508fa19d52084be6d6a%3A1870918690",
+    quantity: 7,
     state: "active"
   },
   {
     listing_id: 4,
-    title: "Cosmic Druzy Pendant",
-    description: "Natural druzy crystal pendant with gold electroplating",
+    title: "Lucky",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Lucky design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
     price: {
-      amount: 5500,
+      amount: 1800,
       divisor: 100,
       currency_code: "USD"
     },
     images: [{
-      url_570xN: "https://images.unsplash.com/photo-1602752275174-ef42915f3685?w=570"
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/507d3d/6700064634/il_1588xN.6700064634_od3m.jpg"
     }],
-    url: "#",
-    quantity: 4,
+    url: "https://www.etsy.com/listing/1885106387/handmade-polymer-clay-earrings-lucky?ref=shop_home_active_3&logging_key=d853aa4fbd5dbba909906d18fafebb30993ffd59%3A1885106387",
+    quantity: 20,
     state: "active"
   },
   {
     listing_id: 5,
-    title: "Nebula Crystal Bracelet",
-    description: "Adjustable bracelet featuring iridescent crystals in cosmic colors",
+    title: "Spring Earrings Collection",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Spring Earrings Collection adds a touch of elegance, making them perfect for everyday wear or special occasions.",
     price: {
-      amount: 3800,
+      amount: 1700,
       divisor: 100,
       currency_code: "USD"
     },
     images: [{
-      url_570xN: "https://images.unsplash.com/photo-1603561596112-0a132b757442?w=570"
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/157ce2/6722561463/il_1588xN.6722561463_4xx5.jpg"
     }],
-    url: "#",
-    quantity: 6,
+    url: "https://www.etsy.com/listing/1865968364/handmade-polymer-clay-earrings-spring?ref=shop_home_active_4&crt=1&logging_key=36f232cbef7269ce94ee7fb10b0208632d17022c%3A1865968364",
+    quantity: 20,
     state: "active"
   },
   {
     listing_id: 6,
-    title: "Astral Light Anklet",
-    description: "Delicate sterling silver anklet with star and moon charms",
+    title: "Cloud Nine",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Cloud Nine adds a touch of elegance, making them perfect for everyday wear or special occasions.",
     price: {
-      amount: 2900,
+      amount: 1800,
       divisor: 100,
       currency_code: "USD"
     },
     images: [{
-      url_570xN: "https://images.unsplash.com/photo-1611652022419-a9419f74343p?w=570"
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/1e8ddf/6627883807/il_1588xN.6627883807_objt.jpg"
     }],
-    url: "#",
-    quantity: 10,
+    url: "https://www.etsy.com/listing/1214983682/handmade-polymer-clay-earrings-cloud?ref=shop_home_active_6&logging_key=272e8a8732015e40f63d7f6278f3eb3b5ed5a76d%3A1214983682",
+    quantity: 20,
     state: "active"
-  }
+  },
+  {
+    listing_id: 7,
+    title: "Stormy",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Stormy design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2500,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/f479fb/6627626133/il_1588xN.6627626133_fup9.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1002985328/handmade-polymer-clay-earrings-stormy?ref=shop_home_active_7&logging_key=968209a867c75345f816c00e5978446ec80d983d%3A1002985328",
+    quantity: 8,
+    state: "active"
+  },
+  {
+    listing_id: 8,
+    title: "Starry Night",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Starry Night design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 1500,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/d763bd/6655325017/il_1588xN.6655325017_8p2k.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1082698913/handmade-charm-earrings-starry-night?ref=shop_home_active_8&logging_key=89689175bf776c3a3fb9ccdddb2a6f91befd51b5%3A1082698913",
+    quantity: 7,
+    state: "active"
+  },
+  {
+    listing_id: 9,
+    title: "Golden Hour",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Golden Hour design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 1400,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/a0b44e/6579767112/il_1588xN.6579767112_oyg3.jpg"
+    }],
+    url: "https://www.etsy.com/listing/998100365/handmade-polymer-clay-earrings-golden?ref=shop_home_active_9&logging_key=8af83fc73f2064840c62ea4d14ae3c8da333d273%3A998100365",
+    quantity: 6,
+    state: "active"
+  },
+  {
+    listing_id: 10,
+    title: "Day Dream",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Day Dream design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2500,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/653c8b/6627883365/il_1588xN.6627883365_km7u.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1070198631/handmade-charm-earrings-day-dream-charm?ref=shop_home_active_10&logging_key=ba04109166c6732cc7ad095a72cf811ae0575ce4%3A1070198631",
+    quantity: 6,
+    state: "active"
+  },
+  {
+    listing_id: 11,
+    title: "Witchy",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Witchy design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 1800,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/ac8c21/6627620811/il_1588xN.6627620811_fy29.jpg"
+    }],
+    url: "https://www.etsy.com/listing/965397482/handmade-polymer-clay-earrings-witchy?ref=shop_home_active_11&logging_key=ba488f31f6ae0d2591173f4323461d9face4d992%3A965397482",
+    quantity: 8,
+    state: "active"
+  },
+  {
+    listing_id: 12,
+    title: "Moonlight Rebels",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Moonlight Rebels design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 1400,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/054163/6579766936/il_1588xN.6579766936_jip8.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1001167912/handmade-polymer-clay-earrings-moonlight?ref=shop_home_active_12&logging_key=e05df943f4cfdee15dcbb2de483d4f9debf72762%3A1001167912",
+    quantity: 5,
+    state: "active"
+  },
+  {
+    listing_id: 13,
+    title: "Mariposa",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Mariposa design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 1600,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/1ab2c5/6627638615/il_1588xN.6627638615_9r2i.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1049407185/handmade-polymer-clay-earrings-mariposa?ref=shop_home_active_13&logging_key=7371fd5a5699ba376170db9a37f3cc9cbae28693%3A1049407185",
+    quantity: 8,
+    state: "active"
+  },
+  {
+    listing_id: 14,
+    title: "Pearl Swirl",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Pearl Swirl design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 1700,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/b5db9c/6655323887/il_1588xN.6655323887_o18j.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1063855634/handmade-charm-earrings-pearl-swirl?ref=shop_home_active_14&logging_key=8b307826d44c87715652e27d50c535ba5c67a432%3A1063855634",
+    quantity: 20,
+    state: "active"
+  },
 ];
 
 export const fetchEtsyListings = async (): Promise<EtsyListing[]> => {
