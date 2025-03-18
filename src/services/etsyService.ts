@@ -245,6 +245,54 @@ const mockListings: EtsyListing[] = [
     quantity: 20,
     state: "active"
   },
+  {
+    listing_id: 15,
+    title: "Stellar",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Stellar design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2800,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/847aa0/6719852832/il_1588xN.6719852832_t1tt.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1874840166/handmade-gold-charm-necklace-stellar?ref=shop_home_active_1&logging_key=05a06e9a7ce92b55827e630d29167552694de0d3%3A1874840166",
+    quantity: 3,
+    state: "active"
+  },
+  {
+    listing_id: 16,
+    title: "Twilight",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Twilight design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2800,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/7710cf/6719840714/il_1588xN.6719840714_kcls.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1874838908/handmade-gold-charm-necklace-twilight?ref=shop_home_active_2&logging_key=e6e5d611cda6409a3ece9d1ac8a763e9d8a8f107%3A1874838908",
+    quantity: 20,
+    state: "active"
+  },
+  {
+    listing_id: 17,
+    title: "Cosmic",
+    description: "These handmade polymer clay earrings are a stunning statement piece for any outfit. Cosmic design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2800,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/f9161d/6767849131/il_1588xN.6767849131_fapg.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1874837800/handmade-gold-charm-necklace-cosmic?ref=shop_home_active_3&logging_key=de4da181d44296a9476ce6a7a4c131695eee5c9c%3A1874837800",
+    quantity: 20,
+    state: "active"
+  },
 ];
 
 export const fetchEtsyListings = async (): Promise<EtsyListing[]> => {
