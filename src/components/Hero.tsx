@@ -7,6 +7,7 @@ import { PiThreadsLogoFill } from 'react-icons/pi';
 import { IconType } from 'react-icons';
 import { FaStar } from 'react-icons/fa';
 import { IoMoonSharp } from 'react-icons/io5';
+import { EtsyListing, mockListings } from '../services/etsyService';
 
 const SocialIcon = ({ Icon, href }: { Icon: IconType; href: string }) => (
   <motion.a
@@ -44,8 +45,24 @@ const Hero = () => {
     setShootingStars(prev => prev.filter(starId => starId !== id));
   };
 
+  // --- Add featured listings logic ---
+  const featuredTitles = ["Head in the Clouds", "Cosmic", "Cloud Nine", "Pearl Swirl"];
+  const featuredListings: EtsyListing[] = mockListings.filter((listing: EtsyListing) => 
+    featuredTitles.includes(listing.title)
+  );
+  // Ensure the order matches featuredTitles if needed, or adjust filter logic
+  // For simplicity, we assume the filter finds them in any order.
+  // To enforce order:
+  // const featuredListingsMap = mockListings.reduce((acc, listing) => {
+  //   if (featuredTitles.includes(listing.title)) {
+  //     acc[listing.title] = listing;
+  //   }
+  //   return acc;
+  // }, {} as Record<string, EtsyListing>);
+  // const orderedFeaturedListings = featuredTitles.map(title => featuredListingsMap[title]).filter(Boolean);
+
   return (
-    <div className="relative h-screen bg-primary overflow-hidden">
+    <div className="relative min-h-screen h-auto bg-primary overflow-hidden pb-16">
       <StarryBackground 
         shootingStars={shootingStars}
         onShootingStarComplete={removeShootingStar}
@@ -55,7 +72,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="relative flex flex-col items-center justify-center h-full text-white text-center px-4"
+        className="relative flex flex-col items-center justify-center min-h-screen text-white text-center px-4 pt-16 pb-8"
       >
         <motion.span
           initial={{ opacity: 0 }}
@@ -125,8 +142,51 @@ const Hero = () => {
           />
         </motion.div>
       </motion.div>
+
+      {/* --- Featured Collection Section --- */}
+      
     </div>
   );
 };
 
 export default Hero; 
+
+// {featuredListings.length > 0 && (
+//   <motion.div
+//     initial={{ opacity: 0, y: 20 }}
+//     animate={{ opacity: 1, y: 0 }}
+//     transition={{ duration: 0.8, delay: 1.2 }}
+//     className="relative w-full max-w-6xl mx-auto px-4 mt-12 pb-12"
+//   >
+//     <h2 className="text-3xl font-serif text-center text-white mb-8">
+//       Featured Collection
+//     </h2>
+//     <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+//       {featuredListings.map((listing: EtsyListing) => (
+//         <motion.a
+//           key={listing.listing_id}
+//           href={listing.url}
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="group block bg-black/20 rounded-lg overflow-hidden shadow-lg hover:shadow-primary/30 transition-shadow duration-300"
+//           whileHover={{ y: -5 }}
+//         >
+//           <img 
+//             src={listing.images[0]?.url_570xN} 
+//             alt={listing.title} 
+//             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" 
+//           />
+//           <div className="p-4">
+//             <h3 className="text-lg font-quicksand font-semibold text-white truncate group-hover:text-gray-200">
+//               {listing.title}
+//             </h3>
+//             {/* Optional: Add price or other details */}
+//             {/* <p className="text-sm text-gray-300 mt-1">
+//               ${(listing.price.amount / listing.price.divisor).toFixed(2)}
+//             </p> */}
+//           </div>
+//         </motion.a>
+//       ))}
+//     </div>
+//   </motion.div>
+// )}
