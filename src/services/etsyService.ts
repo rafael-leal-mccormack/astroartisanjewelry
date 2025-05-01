@@ -311,6 +311,91 @@ export const mockListings: EtsyListing[] = [
     state: "active",
     tags: ["necklace", "charm", "gold", "cosmic", "celestial"]
   },
+  {
+    listing_id: 18,
+    title: "Hermit",
+    description: "These handmade necklaces are a stunning statement piece for any outfit. Cosmic design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2700,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/c4dd5a/6825091816/il_1588xN.6825091816_cevt.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1901967271/handmade-gold-charm-necklace-the-hermit?ga_search_query=hermit&ref=shop_items_search_1&logging_key=edb62cc99101a4fd64e6d74f8d176000988ee7da%3A1901967271",
+    quantity: 20,
+    state: "active",
+    tags: ["necklace", "charm", "gold", "cosmic", "celestial"]
+  },
+  {
+    listing_id: 19,
+    title: "Eclipse",
+    description: "These handmade necklaces are a stunning statement piece for any outfit. Cosmic design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2700,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/eb9e95/6825100140/il_1588xN.6825100140_8ykf.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1887784906/handmade-gold-charm-necklace-eclipse?ga_search_query=eclipse&ref=shop_items_search_1&logging_key=f0fa04c6630554dba03012b13cba77b6fd792552%3A1887784906",
+    quantity: 20,
+    state: "active",
+    tags: ["necklace", "charm", "gold", "cosmic", "celestial"]
+  },
+  {
+    listing_id: 20,
+    title: "Orbit",
+    description: "These handmade necklaces are a stunning statement piece for any outfit. Orbit design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2700,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/5c7e13/6825105408/il_1588xN.6825105408_g6bt.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1901965671/handmade-gold-charm-necklace-orbit?ga_search_query=orbit&ref=shop_items_search_1&logging_key=263150aa7f9b38660cac6d0c3bc8efd46e0e8804%3A1901965671",
+    quantity: 20,
+    state: "active",
+    tags: ["necklace", "charm", "gold", "cosmic", "celestial"]
+  },
+  {
+    listing_id: 21,
+    title: "Nebula",
+    description: "These handmade necklaces are a stunning statement piece for any outfit. Cosmic design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2700,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/3d1a1d/6873085743/il_1588xN.6873085743_tmvn.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1901966057/handmade-gold-charm-necklace-nebula?ga_search_query=nebula&ref=shop_items_search_1&logging_key=43c5bd8c9b2cec8da02fafa79521be101d71e0de%3A1901966057",
+    quantity: 20,
+    state: "active",
+    tags: ["necklace", "charm", "gold", "cosmic", "celestial"]
+  },
+  {
+    listing_id: 22,
+    title: "Nova",
+    description: "These handmade necklaces are a stunning statement piece for any outfit. Cosmic design adds a touch of elegance, making them perfect for everyday wear or special occasions.",
+    price: {
+      amount: 2700,
+      divisor: 100,
+      currency_code: "USD"
+    },
+    images: [{
+      url_570xN: "https://i.etsystatic.com/28023775/r/il/b49b09/6873096279/il_1588xN.6873096279_9rzm.jpg"
+    }],
+    url: "https://www.etsy.com/listing/1887783714/handmade-gold-charm-necklace-nova?ga_search_query=nova&ref=shop_items_search_1&logging_key=76f892ed998083cae79a58075d07bed9288d9af8%3A1887783714",
+    quantity: 20,
+    state: "active",
+    tags: ["necklace", "charm", "gold", "cosmic", "celestial"]
+  },
 ];
 
 export const fetchEtsyListings = async (): Promise<EtsyListing[]> => {
